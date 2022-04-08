@@ -12,22 +12,21 @@
         <div class = "spiral">
             <div id = "circles" class = "largestCircle">
                 <div id = "circles" class = "mediumCircle">
-                    <div id = "circles" class = "smallestCircle">
+                    <div id = "circles" classs = "smallestCircle">
 
                     </div>
                 </div>
             </div>
         </div>
         <div class = "sideButtons">
-            <button type = "button">PAUSE</button>
-            <button type = "button">PLAY</button>
+            <button type = "button" id="button" onclick="buttonChange()">PAUSE/PLAY</button>
         </div>
     </div>
         <!-- sliders -->
         <div id="sliderArea">
             <!-- <div class = "slider1"> <input type = "range" min = "0" max = "100" value = "50" class = "slider" id = "widthSlider"> <h1>Width</h1></div> -->
-            <div class = "slider2"> <input type = "range" min = "0" max = "100" value = "50" class = "slider" id = "opacitySlider" onchange = "rangeValue(this.value)" onmousemove = "rangeValue(this.value)"> <h1>Opacity</h1></div>
-            <div class = "slider3"> <input type = "range" min = "0" max = "100" value = "50" class = "slider" id = "colorSlider"> <h1>Color</h1></div>
+            <div class = "slider2"> <input type = "range" min = "0" max = "100" value = "100" class = "slider" id = "opacitySlider" oninput="changeOpacity(this.value/100)"> <h1>Opacity</h1></div>
+            <!-- <div class = "slider3"> <input type = "range" min = "0" max = "100" value = "50" class = "slider" id = "colorSlider"> <h1>Color</h1></div> -->
         </div>
 
     <script src="index.js"></script>
